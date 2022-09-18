@@ -2,11 +2,13 @@
 
 Tests check that search functionality and menu bar are working. Logging, reporting and screenshots on failure are added. Projects based on Page Object concept. 
 
-No changes needed if project executes on Mac with chromedriver installed. If not, please install chromedriver or add updated version to the project folder and change chromedriver path in conftest.py file
-
-python version is 3.10.6
+Python version is 3.10.6
 
 # How to run?
+
+No changes needed if project executes on Mac with chromedriver installed. 
+If not, please install chromedriver or add it to the project folder and change chromedriver path in conftest.py file
+
 Open cmd in the project folder and run the command 
 
 All test 
