@@ -1,6 +1,6 @@
-from steam_tests.page_objects.main_page import MainPage
-from steam_tests.page_objects.results_page import ResultsPage
-from steam_tests.util.utils import Utils
+from page_objects.main_page import MainPage
+from page_objects.results_page import ResultsPage
+from util.utils import Utils
 
 
 class TestSearch(Utils):
@@ -16,6 +16,6 @@ class TestSearch(Utils):
         log.info("Search for a game genre")
         main_page.search(search_value)
         log.info("Check that results for the search are present")
-        assert results_page.get_results_amount() < 0
+        assert results_page.get_results_amount() > 0
         log.info("Check that search value is present in search field")
         assert results_page.get_search_input_text() == search_value
