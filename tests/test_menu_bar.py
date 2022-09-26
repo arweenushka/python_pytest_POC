@@ -1,5 +1,5 @@
-from steam_tests.page_objects.main_page import MainPage
-from steam_tests.util.utils import Utils
+from page_objects.main_page import MainPage
+from util.utils import Utils
 
 
 class TestMenuBar(Utils):
